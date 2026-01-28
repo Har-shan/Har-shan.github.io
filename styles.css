@@ -99,7 +99,7 @@ body {
    LANDING PAGE STYLES
    ============================================ */
 .landing-page {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
 }
 
 .hero-section {
@@ -109,7 +109,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 4rem 2rem;
-    color: white;
+    color: #333;
 }
 
 .hero-content {
@@ -145,21 +145,25 @@ body {
 }
 
 .btn-primary {
-    background: white;
-    color: #667eea;
+    background: transparent;
+    color: #333;
+    border: 3px solid #333;
 }
 
-
+.btn-primary:hover {
+    background: lightyellow;
+    color: black;
+}
 
 .btn-secondary {
     background: transparent;
-    color: white;
-    border: 2px solid white;
+    color: #333;
+    border: 3px solid #333;
 }
 
 .btn-secondary:hover {
-    background: white;
-    color: #667eea;
+    background: lightyellow;
+    color: black;
 }
 
 .feature-cards {
@@ -323,7 +327,7 @@ body {
    HOBBIES PAGE STYLES
    ============================================ */
 .hobbies-page {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
 }
 
 .hobbies-grid {
@@ -385,18 +389,16 @@ body {
     font-weight: bold;
 }
 
-.hobby-reading { border-top: 4px solid #3498db; }
+
 .hobby-music { border-top: 4px solid #9b59b6; }
-.hobby-photography { border-top: 4px solid #e74c3c; }
-.hobby-gaming { border-top: 4px solid #f39c12; }
 .hobby-sports { border-top: 4px solid #27ae60; }
-.hobby-travel { border-top: 4px solid #1abc9c; }
+
 
 /* ============================================
    TECH PAGE STYLES
    ============================================ */
 .tech-page {
-    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
 }
 
 .tech-skills {
@@ -529,7 +531,7 @@ body {
    MISCELLANEOUS PAGE STYLES
    ============================================ */
 .misc-page {
-    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
 }
 
 .misc-content {
@@ -815,8 +817,94 @@ blockquote {
 .twitter .social-icon { background: #1da1f2; }
 .instagram .social-icon { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 
+.faq-page {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.faq-box {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.question {
+    background: #333;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.q-number {
+    background: white;
+    color: #1e3c72;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.question h3 {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.answer {
+    padding: 2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.answer p {
+    margin-bottom: 1rem;
+}
+
+
+
+.answer strong {
+    color: #2c3e50;
+}
+
+.sub-answer {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-left: 4px solid #1e3c72;
+    margin: 1.5rem 0;
+    border-radius: 5px;
+}
+
+.sub-answer h4 {
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+
 /* Responsive Design */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .nav-menu {
         flex-direction: column;
         gap: 0.5rem;
@@ -855,4 +943,48 @@ blockquote {
     .achievement-item {
         flex-direction: column;
         text-align: center;
-    } */
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .feature-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        padding-left: 60px;
+    }
+    
+    .timeline-marker {
+        left: 8px;
+    }
+    
+    .hobbies-grid,
+    .projects-grid,
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .achievement-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+}
