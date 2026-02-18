@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCIS UOH - Admissions Redesigned</title>
+    <link rel="stylesheet" href="redesigned_styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="images.jpeg" alt="University of Hyderabad Logo" class="logo">
+                    <div class="logo-text">
+                        <h1>University of Hyderabad</h1>
+                        <p>School of Computer & Information Sciences</p>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#academics" class="active">Academics</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#people">People</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Admissions 2026-27</h2>
+                <p class="hero-subtitle">Join India's Premier Computer Science Programs</p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Programs</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Seats</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Faculty</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Important Notice -->
+            <div class="notice-banner">
+                <div class="notice-icon">⚠️</div>
+                <div class="notice-content">
+                    <strong>Disclaimer:</strong> While every attempt is made to keep this page up-to-date, please refer to the latest University prospectus for current information. In case of any conflict, the prospectus information shall be considered authentic.
+                </div>
+            </div>
+
+            <!-- Program Tabs -->
+            <section class="programs-section">
+                <h2 class="section-title">Admission Programs</h2>
+                
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="phd">Ph.D.</button>
+                        <button class="tab-btn" data-tab="integrated">5-Year Integrated M.Tech</button>
+                        <button class="tab-btn" data-tab="mtech">M.Tech</button>
+                        <button class="tab-btn" data-tab="mca">MCA</button>
+                    </div>
+
+                    <!-- PhD Tab Content -->
+                    <div class="tab-content active" id="phd">
+                        <div class="program-card">
+                            <div class="program-header">
+                                <h3>Doctor of Philosophy (Ph.D.)</h3>
+                                <span class="program-badge">Research Program</span>
+                            </div>
+                            <div class="program-details">
+                                <div class="detail-item">
+                                    <span class="detail-icon"></span>
+                                    <div>
+                                        <strong>Admission Process</strong>
+                                        <p>Entrance exam followed by interview</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon"></span>
+                                    <div>
+                                        <strong>Eligibility</strong>
+                                        <p>Please refer to UGC Regulations 2016 and University prospectus</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon"></span>
+                                    <div>
+                                        <strong>Fee Structure</strong>
+                                        <p>Click "View Fees" below for detailed breakdown</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-primary" onclick="showFeeCalculator('phd')">View Fee Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Integrated M.Tech Tab Content -->
+                    <div class="tab-content" id="integrated">
+                        <div class="program-card">
+                            <div class="program-header">
+                                <h3>5-Year Integrated M.Tech in Computer Science</h3>
+                                <span class="program-badge">Undergraduate Program</span>
+                            </div>
+                            <div class="program-details">
+                                <div class="detail-item">
+                                    <span class="detail-icon">📝</span>
+                                    <div>
+                                        <strong>Admission Process</strong>
+                                        <p>JEE (Main) examination</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">🎓</span>
+                                    <div>
+                                        <strong>Counselling</strong>
+                                        <p>Through JOSAA/CSAB</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">⏱️</span>
+                                    <div>
+                                        <strong>Duration</strong>
+                                        <p>5 Years (10 Semesters)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-primary" onclick="showFeeCalculator('integrated')">View Fee Details</button>
+                        </div>
+                    </div>
+
+                    <!-- M.Tech Tab Content -->
+                    <div class="tab-content" id="mtech">
+                        <div class="program-card">
+                            <div class="program-header">
+                                <h3>M.Tech (CS/AI/IT)</h3>
+                                <span class="program-badge">Postgraduate Program</span>
+                            </div>
+                            <div class="program-details">
+                                <div class="detail-item">
+                                    <span class="detail-icon">🎯</span>
+                                    <div>
+                                        <strong>Specializations</strong>
+                                        <p>Computer Science, Artificial Intelligence, Information Technology</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">📊</span>
+                                    <div>
+                                        <strong>Admission Basis</strong>
+                                        <p>Valid GATE scores in CS/IT through CCMT counselling</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">🌐</span>
+                                    <div>
+                                        <strong>More Info</strong>
+                                        <p>Visit ccmt.nic.in for counselling details</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-primary" onclick="showFeeCalculator('mtech')">View Fee Details</button>
+                        </div>
+                    </div>
+
+                    <!-- MCA Tab Content -->
+                    <div class="tab-content" id="mca">
+                        <div class="program-card">
+                            <div class="program-header">
+                                <h3>Master of Computer Applications (MCA)</h3>
+                                <span class="program-badge">Postgraduate Program</span>
+                            </div>
+                            <div class="program-details">
+                                <div class="detail-item">
+                                    <span class="detail-icon">📋</span>
+                                    <div>
+                                        <strong>Entrance Test</strong>
+                                        <p>NIMCET (NIT MCA Common Entrance Test)</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">📈</span>
+                                    <div>
+                                        <strong>Selection Process</strong>
+                                        <p>Merit-based on NIMCET scores, counselling at UOH</p>
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">📄</span>
+                                    <div>
+                                        <strong>Application</strong>
+                                        <p>Apply separately to UOH and provide NIMCET scores</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn-primary" onclick="showFeeCalculator('mca')">View Fee Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fee Calculator Section -->
+            <section class="fee-calculator-section" id="fee-section">
+                <h2 class="section-title">Fee Details</h2>
+                
+                <div class="calculator-container">
+                    <div class="calculator-controls">
+                        <div class="control-group">
+                            <label for="program-select">Select Program</label>
+                            <select id="program-select" onchange="updateFees()">
+                                <option value="phd">Ph.D.</option>
+                                <option value="integrated">5-Year Integrated M.Tech</option>
+                                <option value="mtech">M.Tech (CS/AI/IT)</option>
+                                <option value="mca">MCA</option>
+                            </select>
+                        </div>
+                        
+                        <div class="control-group">
+                            <label for="category-select">Category</label>
+                            <select id="category-select" onchange="updateFees()">
+                                <option value="general">General</option>
+                                <option value="foreign">Foreign National/NRI</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="fee-breakdown">
+                        <h3>Fee Breakdown</h3>
+                        <div class="fee-items">
+                            <div class="fee-item">
+                                <span>Admission Fee</span>
+                                <span id="admission-fee" class="fee-amount">₹320</span>
+                            </div>
+                            <div class="fee-item">
+                                <span>At Time of Admission</span>
+                                <span id="initial-fee" class="fee-amount">₹330</span>
+                            </div>
+                            <div class="fee-item">
+                                <span>Tuition Fee</span>
+                                <span id="tuition-fee" class="fee-amount">₹1,090</span>
+                            </div>
+                            <div class="fee-item">
+                                <span>Miscellaneous Fee</span>
+                                <span id="misc-fee" class="fee-amount">₹3,630</span>
+                            </div>
+                            <div class="fee-item">
+                                <span>Deposits (Refundable)</span>
+                                <span id="deposit-fee" class="fee-amount">₹1,750</span>
+                            </div>
+                            <div class="fee-item total">
+                                <span><strong>Grand Total</strong></span>
+                                <span id="total-fee" class="fee-amount"><strong>₹7,120</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hostel-info">
+                        <button class="accordion-btn" onclick="toggleAccordion('hostel')">
+                            <span>Hostel & Mess Charges</span>
+                            <span class="accordion-icon">▼</span>
+                        </button>
+                        <div class="accordion-content" id="hostel">
+                            <div class="hostel-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Particulars</th>
+                                            <th>General Category</th>
+                                            <th>SC/ST Scholarship Holders</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Mess Deposit (5-Year Programs)</td>
+                                            <td>₹5,000*</td>
+                                            <td>₹1,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mess Deposit (Other Programs)</td>
+                                            <td>₹2,500</td>
+                                            <td>₹1,500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Room Rent (Per Semester)</td>
+                                            <td>₹500</td>
+                                            <td>Nil</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Crockery Fees (Per Year)</td>
+                                            <td>₹250</td>
+                                            <td>₹250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hostel Caution Money (Refundable)</td>
+                                            <td>₹600</td>
+                                            <td>₹400</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="note">* For 5-year programs: ₹2,500 at admission + ₹2,500 at start of 3rd year</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Links Section -->
+            <section class="quick-links">
+                <h2 class="section-title">Important Links</h2>
+                <div class="links-grid">
+                    <a href="#" class="link-card">
+                        <span class="link-icon">📄</span>
+                        <h4>University Prospectus</h4>
+                        <p>Download the complete prospectus</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <span class="link-icon">📝</span>
+                        <h4>Apply Online</h4>
+                        <p>Start your application</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <span class="link-icon">📅</span>
+                        <h4>Important Dates</h4>
+                        <p>Check admission schedule</p>
+                    </a>
+                    <a href="#" class="link-card">
+                        <span class="link-icon">❓</span>
+                        <h4>FAQs</h4>
+                        <p>Get answers to common questions</p>
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 SCIS, University of Hyderabad</p>
+                <div class="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="redesigned_script.js"></script>
+</body>
+</html>

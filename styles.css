@@ -331,9 +331,9 @@ body {
 }
 
 .hobbies-grid {
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 10rem;
 }
 
 .hobby-card {
@@ -390,8 +390,12 @@ body {
 }
 
 
-.hobby-music { border-top: 4px solid #9b59b6; }
-.hobby-sports { border-top: 4px solid #27ae60; }
+.hobby-music { 
+    border-top: 4px solid #9b59b6; 
+}
+.hobby-sports { 
+    border-top: 4px solid #27ae60; 
+}
 
 
 /* ============================================
@@ -975,7 +979,7 @@ blockquote {
     .hobbies-grid,
     .projects-grid,
     .skills-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
     
     .contact-content {
